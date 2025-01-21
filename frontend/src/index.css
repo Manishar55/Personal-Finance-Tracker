@@ -158,3 +158,18 @@ button:hover{
   font-weight: bold;
 }
 
+.gapp{
+  gap: 100px;
+}
+
+.Edit-button{
+  margin-right: 10px;
+  /* background-color: #14b516; */
+  background-color: #ecb91f;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}

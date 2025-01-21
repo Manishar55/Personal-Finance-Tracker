@@ -7,18 +7,21 @@ const ExpenseTable = ({ expenses, deleteExpens, editExpense }) => {
             {expenses.map((expense, index) => (
                 <div key={index} className="expense-item">
 
-                    {/* <button className="delete-button" onClick={() =>
-                        editExpense(expense._id)}>Edit</button> */}
-
                     <div className="expense-description">{expense.text}</div>
                     
                     <div
                         className="expense-amount"
-                        style={{ color: expense.amount > 0 ? '#27ae60' : '#c0392b' }}
+                        style={{ color: expense.amount > 0 ? '#32d476' : '#f85947' }}
                     >₹{expense.amount}</div>
+
+                    {/* Edit button------------ */}
+                    <div className='gapp'>
+                    <button className="Edit-button" onClick={() =>
+                        editExpense(expense._id)}>Edit</button>
 
                     <button className="delete-button" onClick={() =>
                         deleteExpens(expense._id)}>Delete</button>
+                    </div>
                 </div>
             ))}
         </div>
