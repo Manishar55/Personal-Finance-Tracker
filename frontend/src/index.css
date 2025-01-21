@@ -1,0 +1,160 @@
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  /* background-image: linear-gradient(#041E42, rgb(13, 33, 166), rgb(247, 244, 244)); */
+  /* align-items: center; */
+  background-color: #041E42;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+
+.container{
+  /* background-color: #FFF; */
+  background-color: #002244;
+  padding: 32px 100px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  /* box-shadow: 8px 8px 24px 0px rgb(220, 221, 231); */
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  /* margin-top: 100px; */
+  border-radius: 15px 2px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 20px 2px;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+}
+
+button{
+  background-color: rgb(37, 210, 249);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 15px 2px;
+}
+
+button:hover{
+  background-color: rgb(144, 243, 243);
+}
+
+.user-section{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+/* Minimal styling for the expense list */
+.expense-list {
+  font-family: Arial, sans-serif;
+}
+
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(43, 5, 134);
+}
+.fin{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(37, 210, 249);
+}
+.expense-description {
+  font-weight: bold;
+}
+.ex{
+  border-bottom: 1px solid rgb(43, 5, 134);
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: #f85947;
+}
+
+.amounts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.income-amount {
+  color: #32d476;
+  font-weight: bold;
+}
+
+.expense-amount{
+  color: #f34a38;
+  font-weight: bold;
+}
+
